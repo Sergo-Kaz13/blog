@@ -1,0 +1,130 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  bottom: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+body {
+  height: 100vh;
+  font-family: 'Raleway', sans-serif;
+  color: #fff;
+}
+.wrapper {
+  min-height: 100%;
+  background-color: #B07CF7;
+}
+._container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.header {
+  padding: 100px 0 50px 0;
+  text-align: center;
+}
+.header h1 {
+  font-size: 90px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.header P {
+  width: 570px;
+  margin: 0 auto;
+  font-weight: 300;
+  line-height: 1.5;
+  font-size: 17px;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+.cards__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-basis: 370px;
+  min-height: 300px;
+  padding: 30px 5px 20px 20px;
+}
+.cards__item h4 {
+  font-weight: 700;
+  font-size: 19px;
+  margin-bottom: 22px;
+}
+.cards__item p {
+  font-size: 13px;
+  opacity: .8;
+}
+.cocktail {
+  background: linear-gradient( rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.5) ), url(../images/cocktail.png) center center/auto no-repeat;
+}.soup {
+  background: linear-gradient( rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.5) ), url(../images/soup.png) center center/auto no-repeat;
+}
+.raspberry {
+  background: linear-gradient( rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.5) ), url(../images/raspberry.png) center center/auto no-repeat;
+}
+.text__style {
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-color: rgba(71, 70, 70, 0.5);
+  border-radius: 5px;
+  margin-left: 10px;
+  font-size: 32px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  line-height: .9;
+}
+.text__style span {
+  display: inline-block;
+  font-size: 21px;
+  font-weight: 800;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-bottom: 50px;
+}
+button {
+  min-width: 180px;
+  padding: 10px 10px;
+  font-size: 20px;
+  font-weight: 300;
+  text-transform: uppercase;
+  background-color: #F72B3B;
+  color: #fff;
+  border: none;
+  box-shadow: 1px 1px 5px #000;
+  transition: .3s;
+}
+button:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: #F72B3B;
+  min-width: 250px;
+  transform: translate(-4px, -4px);
+}
