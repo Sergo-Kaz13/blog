@@ -68,7 +68,26 @@ body {
   min-height: 300px;
   padding: 30px 5px 20px 20px;
   transition: .3s;
+
+  animation-name: jump;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(0.68,-0.55,0.265,1.55);
+  animation-iteration-count: 1;
+  animation-direction: alternate-reverse;
+  animation-delay: 1s;
 }
+@keyframes jump{
+
+  0%{
+    transform: translateY(0);
+  }
+  50%{
+  transform: translateY(-100px);
+  }
+  100%{
+  transform: translateY(40px);
+  }
+  }
 .cards__item:hover {
   transform: translateY(-5px);
   box-shadow: 0 5px 10px #1a181d;
@@ -126,7 +145,31 @@ button {
   border: none;
   box-shadow: 1px 1px 5px #000;
   transition: .3s;
+
+  animation-name: circle;
+  animation-duration: 2s;
+  animation-timing-function: cubic-bezier(0.68,-0.55,0.265,1.55);
+  animation-iteration-count: 1;
+  animation-direction: alternate-reverse;
+  animation-delay: 2s;
 }
+@keyframes circle{
+  0%{
+    transform: translateY(0);
+  }
+  50%{
+  transform: translateY(-100px);
+}
+  70%{
+    transform: rotate(0deg);
+  }
+  80%{
+    transform: rotate(360deg);
+  }
+  100%{
+  transform: translateY(10px);
+  }
+  }
 button:hover {
   cursor: pointer;
   background-color: rgb(238, 241, 233);
