@@ -67,6 +67,12 @@ body {
   flex-basis: 370px;
   min-height: 300px;
   padding: 30px 5px 20px 20px;
+  transition: .3s;
+}
+.cards__item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 10px #1a181d;
+  cursor: pointer;
 }
 .cards__item h4 {
   font-weight: 700;
@@ -123,7 +129,7 @@ button {
 }
 button:hover {
   cursor: pointer;
-  background-color: #fff;
+  background-color: rgb(238, 241, 233);
   color: #F72B3B;
   min-width: 250px;
   transform: translate(-4px, -4px);
